@@ -75,6 +75,10 @@ main{
 .chat__body__header__username{
   padding-left: 16px;
 }
+.chat__chosen {
+  background: rgba(0, 0, 0, 0.05);
+  border-right: 3px solid var(--accent-color);
+}
 /*
 Навигация
 */
@@ -138,4 +142,55 @@ nav {
 }
 .nav__btn:hover {
   filter: brightness(1.25);
+}
+
+
+/*
+ЧАТ
+*/
+.
+.communication {
+  width: 480px;
+
+}
+.communication__body__mymessage__message {
+  font-family: inherit;
+  height: 48px;
+  background-color: var(--accent-color);
+  border-radius: 24px 24px 0px 24px;
+  color: white;
+}
+.communication__body__hismessage__message {
+  height: 216px;
+  border-radius:24px 24px 24px 0px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.communication__body__mymessage__message,
+.communication__body__hismessage__message {
+  font-size: 16px;
+  line-height: 24px;
+  width: 317px;
+  padding: 16px;
+}
+.communication__body__date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.communication__body__ava {
+  width: 32px;
+  height: 32px;
+}
+.communivation__body__hismessage ul {
+  display: flex;
+}
+.send {
+  border-top: 1px solid var(--light-grey);
+  color: rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  padding: 16px;
+}
+.send ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
