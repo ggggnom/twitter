@@ -148,10 +148,15 @@ nav {
 /*
 ЧАТ
 */
-.
+
 .communication {
   width: 480px;
-
+  display: inline-block;
+  border-right: 1px solid var(--light-grey);
+  position: absolute;
+  top: 1px;
+  left: 968px;
+  position: fixed;
 }
 .communication__body__mymessage__message {
   font-family: inherit;
@@ -159,6 +164,7 @@ nav {
   background-color: var(--accent-color);
   border-radius: 24px 24px 0px 24px;
   color: white;
+  margin-top: 64px;
 }
 .communication__body__hismessage__message {
   height: 216px;
@@ -172,10 +178,6 @@ nav {
   width: 317px;
   padding: 16px;
 }
-.communication__body__date {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
-}
 .communication__body__ava {
   width: 32px;
   height: 32px;
@@ -188,9 +190,157 @@ nav {
   color: rgba(0, 0, 0, 0.25);
   padding: 16px;
   padding: 16px;
+  border-bottom: 1px solid var(--light-grey);
 }
 .send ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.communication__main__header__nickname {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+h2 {
+  font-size: 18px;
+}
+.communication__body {
+  padding: 16px 16px 24px 16px;
+
+}
+.communication__body__mymessage {
+  margin-left: 100px;
+  align-items: flex-end;
+}
+.communication__body__mymessage__date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 235px;
+  margin-top: 1px;
+}
+.communication__body__hismessage__date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1px;
+}
+
+
+/*
+ЧАТЫ
+*/
+.tweet__ava {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+.tweet {
+  display: flex;
+  padding: 24px 32px 16px 16px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.tweet__body__header * {
+  margin-right: 16px;
+}
+.tweet__body__header h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tweet__body__header a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.tweet__body__header {
+  display: flex;
+  align-items: center;
+}
+.tweet p {
+  font-size: 16px;
+  line-height: 24px;
+  width: 472px;
+  padding: 8px 0 16px;
+}
+.main {
+  width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 20vh;
+}
+.tweet__body__header a:hover {
+  text-decoration: underline;
+}
+.tweet__body__actions {
+  display: flex;
+}
+.tweet__body__actions  li {
+  margin-right: 84px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.35);
+  align-items: center;
+  display: flex;
+}
+.tweet__body__actions li span {
+
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+}
+aside li:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+aside li:last-child {
+  font-size: 14px;
+  color: var(--accent-color);
+}
+.user__info__name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.user__info__nick {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.user {
+  display: flex;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+aside {
+  background-color: rgba(25, 25, 25, 0.05);
+  width: 320px;
+  height: 300px;
+  border-radius: 12px;
+  position: absolute;
+  left: 984px;
+  top: 15px;
+  position: fixed;
+}
+aside li {
+  padding: 8px 0 8px 16px;
+}
+aside li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+aside li:last-child {
+  padding: 11px 0 11px 16px;
+  justify-content: center;
+  }
+aside a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 4px;
+}
+aside a:hover {
+  text-decoration: underline;
+}
+.user__info {
+  margin-top: 2px;
+  display: block;
+  padding-bottom: 2px;
 }
